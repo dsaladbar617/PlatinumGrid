@@ -1,12 +1,9 @@
 import Login from "@/components/Login";
 import { clientPromise } from "@/db/db";
 
-// type ConectionStatus = {
-//   isConnected: boolean;
-// };
-
 export default async function Home() {
   let isConnected = false;
+  // let db = await clientPromise;
 
   try {
     await clientPromise;
